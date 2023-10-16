@@ -52,4 +52,19 @@ void main() {
   str="aaa";
 
   // 정리하자면 nullable과 헷갈리지 않기 위해 사용 그리고 API 응답 받아오는데 많이 사용한다니 알고있자
+
+  // [정리] 6. const
+  // 다트에도 const가 있지만 자바스크립트와는 다름
+  // const > compile time constant를 만들어줌
+  // compile time constant > compile-time에 값을 알고 있어야 함.
+  // final보다 엄격한 상수라고 생각하면 된다.
+  
+  // 이건 가능
+  const APIKey = "asdkl1ltl1bajf092j1";
+  // 밑은 불가능 final쓰세요
+  const cant = "어떤 함수의 return값은 const로 사용할 수 없음 ex) const sum = add(1,2)";
+  
+  // 정리하자면 
+  // final > 그냥 상수 
+  // const > 엄격한 상수 (무조건 하드코딩)
 }
