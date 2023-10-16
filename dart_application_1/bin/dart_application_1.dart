@@ -14,4 +14,17 @@ void main() {
   explicit = "explicit";
 
   // 그래서 지금과 같은 상황에서는 var를 사용하는걸 권장한다.
+
+  // [정리] 2. dynamic
+  // 묵시적 dynamic
+  var value;
+  value = "abc";
+  value = 123;
+  value = true;
+
+  // 명시적으로도 사용할 수 있음
+  dynamic dnm;
+  dnm = "qwerty";
+  dnm = 999;
+  dnm = false;
 }
