@@ -27,4 +27,12 @@ void main() {
   dnm = "qwerty";
   dnm = 999;
   dnm = false;
+
+  // [정리] 3. nullable variables
+  String? nullSafe = "null";
+  nullSafe = null;
+
+  // like > if(nullSafe != null){ nullsafe.isNotEmpty }
+  nullSafe?.isNotEmpty;
+  // 자바스크립트처럼 ?를 사용하면 null 참조 가능
 }
