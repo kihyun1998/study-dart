@@ -35,4 +35,12 @@ void main() {
   // like > if(nullSafe != null){ nullsafe.isNotEmpty }
   nullSafe?.isNotEmpty;
   // 자바스크립트처럼 ?를 사용하면 null 참조 가능
+
+  // [정리] 4. final
+  // 상수 선언 하는 방법
+  // 자바스크립트의 const와 같다.
+  final fn = "can only be set once";
+
+  final String fn2 = "명시적 선언도 가능하다.";
+  // 명시적 선언도 가능함
 }
