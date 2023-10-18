@@ -39,4 +39,15 @@ void main() {
     if (addSome) 4,
   ];
   // 위처럼 if문 걸어서 true 면 해당 요소 추가하는 거임
+
+
+  // [정리] 3. string interpolation
+  // string에 변수 추가
+  var name = 'park';
+  var hello = "Hello, My name is $name";
+
+  // 대괄호를 사용해서 연산도 할 수 있음
+  var age = 20;
+  var hello2 = "Hello, My name is $name and I'm ${age+4}";
+
 }
