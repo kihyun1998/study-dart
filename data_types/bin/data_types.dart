@@ -79,4 +79,12 @@ void main() {
     {'name':'b', 'power': 2.2},
   ];
 
+  // [정리] 6. Sets
+  // Set은 요소 중복이 없다. 유니크하다고 할 수 있다.
+  // python의 tuple과 같다.
+  // Set은 아래처럼 묵시적으로 사용할 수 있다.
+  var numbers = {1,2,3,4};
+  
+  // 명시적으로 사용한다면 아래처럼 가능
+  Set<int> numbers2 = {6,7,8,9};
 }
