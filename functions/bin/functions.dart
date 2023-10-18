@@ -55,6 +55,12 @@ String upperName(String? name) => name != null ? name.toUpperCase() : 'NULL';
 String upperName2(String? name) => name?.toUpperCase() ?? 'NULL';
 //================================================
 
+// [정리] 5. Typedef
+List<int> reverseListOfNum(List<int> list) {
+  var reversed = list.reversed;
+  return reversed.toList();
+}
+
 void main() {
   // 정리1 ==============
   sayHi("park");
