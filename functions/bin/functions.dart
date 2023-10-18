@@ -34,6 +34,15 @@ String sayHi5({String name = 'kim', int age = 20, String country = 'USA'}) {
 String sayHi6({String name = 'kim', required int age, String country = 'USA'}) {
   return "Hi, $name, you are $age years and leave in $country";
 }
+//================================================
+
+// [정리] 3. Optional Positional Parameters
+// positional parameter는 순서에 맞춰서 입력해야 함 (named parameter 안쓴거) 모두 required임
+// 여기서 한 파라미터만 입력 받지 않아도 되게 하는 방법을 소개한다.
+String sayHi7(String name, int age, [String? country = 'USA']) {
+  return "Hi, $name, you are $age years and leave in $country";
+}
+// 위처럼 해당 파라미터를 대괄호 안에 넣고 연산자 뒤에 물음표를 붙여서 null 가능성을 표시하고 default value 넣는다.
 
 void main() {
   // 정리1 ==============
@@ -49,5 +58,9 @@ void main() {
   print(sayHi5(name: 'park', age: 25, country: 'Korea'));
   print(sayHi5(country: 'Korea'));
   print(sayHi6(age: 50));
+  // ====================
+
+  // 정리3 ==============
+  print(sayHi5(name: 'park', age: 35));
   // ====================
 }
