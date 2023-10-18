@@ -60,4 +60,23 @@ void main() {
     for(var old in arr) "old $old",
   ];
 
+  // [정리] 5. Maps
+  // 키는 String이고 값은 Object다.
+  var player ={
+    'name' : 'park',
+    'power' : 10.1,
+  };
+
+  // 밑에 처럼 명시적으로 선언 가능하다
+  Map<List<int>,bool> player2 ={
+    [1,2,3]: true,
+    [4,5,6]: false,
+  };
+
+  // 이런식으로 많이 사용한다.
+  List<Map<String,Object>> player3 = [
+    {'name':'a', 'power': 1.1},
+    {'name':'b', 'power': 2.2},
+  ];
+
 }
