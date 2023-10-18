@@ -50,4 +50,14 @@ void main() {
   var age = 20;
   var hello2 = "Hello, My name is $name and I'm ${age+4}";
 
+  // [정리] 4. collection for
+  // 배열에 for문으로 값 추가할 수 있는 기능
+  var arr = ['a','b'];
+  var newArr = [
+    'c',
+    'd',
+    'e',
+    for(var old in arr) "old $old",
+  ];
+
 }
