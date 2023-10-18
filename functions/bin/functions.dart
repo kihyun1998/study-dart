@@ -56,7 +56,11 @@ String upperName2(String? name) => name?.toUpperCase() ?? 'NULL';
 //================================================
 
 // [정리] 5. Typedef
-List<int> reverseListOfNum(List<int> list) {
+// 변수 type을 커스텀할 수 있는 기능
+
+typedef Li = List<int>;
+
+Li reverseListOfNum(Li list) {
   var reversed = list.reversed;
   return reversed.toList();
 }
@@ -89,5 +93,9 @@ void main() {
   // ??= 이건데 해당 변수가 null이면 값을 할당하는 거임
   String? name;
   name ??= 'park';
+  // ====================
+
+  // 정리5 ==============
+  print(reverseListOfNum([1, 2, 3, 4, 5]));
   // ====================
 }
