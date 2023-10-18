@@ -43,6 +43,17 @@ String sayHi7(String name, int age, [String? country = 'USA']) {
   return "Hi, $name, you are $age years and leave in $country";
 }
 // 위처럼 해당 파라미터를 대괄호 안에 넣고 연산자 뒤에 물음표를 붙여서 null 가능성을 표시하고 default value 넣는다.
+//================================================
+
+// [정리] 4. QQ Operator
+// ?? 와 ?= 연산자
+// 3항 연산자임 근데 차이점은 연산자에 ? 연산자 붙여야 한다는 점
+String upperName(String? name) => name != null ? name.toUpperCase() : 'NULL';
+
+// 이걸 줄이는게 ?? 연산자임
+// 밑에처럼 좌항은 null이 아닐 때 우항은 null일 때 이다.
+String upperName2(String? name) => name?.toUpperCase() ?? 'NULL';
+//================================================
 
 void main() {
   // 정리1 ==============
@@ -62,5 +73,15 @@ void main() {
 
   // 정리3 ==============
   print(sayHi5(name: 'park', age: 35));
+  // ====================
+
+  // 정리4 ==============
+  print(upperName2('park'));
+  print(upperName2(null));
+
+  // QQ equals 혹슨 QQ assignment operator라는 연산자도 있음
+  // ??= 이건데 해당 변수가 null이면 값을 할당하는 거임
+  String? name;
+  name ??= 'park';
   // ====================
 }
