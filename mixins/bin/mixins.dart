@@ -7,6 +7,10 @@ import 'package:mixins/mixins.dart' as mixins;
 // 클래스에 프로퍼티를 추가할 때 사용한다.
 // 클래스의 메소드들을 재사용 가능하다는 부분이 장점이다.
 
+// 상속과의 차이점 :
+// 상속 : class의 정보들을 받아오는 것 , yes super
+// mixin : class의 정보들을 뺐어오는 것, no super
+
 mixin HighScore {
   final String grade = 'A+';
 }
